@@ -1,4 +1,4 @@
-# `test_acls.py` QA Automation Notes
+# QA Automation Analysis
 
 ## 1. Topology in Use
 * The module asserts a dual-DUT setup with an Ixia (or Spirent) traffic generator connected to both DUTs, including a port-channel between DUT1 and DUT2. This is inferred from the ASCII art diagram in `get_handles()` and the explicit topology request `st.ensure_min_topology("D1D2:2", "D1T1:2", "D2T1:1")`, which requires two DUT interconnects and test generator links.【F:spytest/tests/qos/acl/test_acls.py†L41-L63】
